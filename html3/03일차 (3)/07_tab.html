@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Effects - Tab</title>
+	<link rel="stylesheet" href="css/style_tab.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#tab_btn li').first().addClass('on');
+			$('#tab_con section').first().show();
+
+			$('#tab_btn li').click(function(){
+				$('#tab_btn li').removeClass('on');
+				$(this).addClass('on');
+				$('#tab_con section').hide();
+				$('#tab_con section').eq($(this).index()).show();
+			});
+
+			/*$('#tab_btn li').first().click(function(){
+				$('#tab_btn li').removeClass('on');
+				$(this).addClass('on');
+				$('#tab_con section').hide();
+				$('#tab_con section').first().show();
+			});
+
+			$('#tab_btn li').eq(1).click(function(){
+				$('#tab_btn li').removeClass('on');
+				$(this).addClass('on');
+				$('#tab_con section').hide();
+				$('#tab_con section').eq(1).show();
+			});
+
+			$('#tab_btn li').last().click(function(){
+				$('#tab_btn li').removeClass('on');
+				$(this).addClass('on');
+				$('#tab_con section').hide();
+				$('#tab_con section').last().show();
+			});*/
+		});
+	</script>
+
+</head>
+<body>
+	<div id="tab">
+		<ul id="tab_btn">
+			<li>본사</li>
+			<li>아카데미</li>
+			<li>커피클럽 로스팅 센터</li>
+		</ul>
+		<div id="tab_con">
+			<section>
+				<h1>본사</h1>
+				<dl>
+					<dt>주소</dt>
+					<dd>서울특별시 중구 통일로 92, 9층(순화동, 케이지타워)</dd>
+				</dl>
+				<dl>
+					<dt>오시는 길</dt>
+					<dd>5호선 서대문역 6번 출구 250m</dd>
+				</dl>
+				<dl>
+					<dt>고객센터</dt>
+					<dd>02-2188-7100</dd>
+				</dl>
+				<dl>
+					<dt>가맹문의</dt>
+					<dd>02-6350-7229</dd>
+				</dl>
+			</section>
+
+			<section>
+				<h1>아카데미</h1>
+				<dl>
+					<dt>주소</dt>
+					<dd>서울특별시 종로구 삼일대로 395 종로빌딩 5층</dd>
+				</dl>
+				<dl>
+					<dt>오시는 길</dt>
+					<dd>1. 지하철 1,3,5호선 '종로 3가역' 15번 출구에서 도보 5분<br>2. 지하철 1호선 ‘종각역’ 4번 출구 혹은 종각 지하 쇼핑센터 12번 출구에서 도보 3분</dd>
+				</dl>
+				<dl>
+					<dt>e-mail</dt>
+					<dd>academy@hollyscoffee.com</dd>
+				</dl>
+			</section>
+
+			<section>
+				<h1>로스팅센터</h1>
+				<dl>
+					<dt>주소</dt>
+					<dd>경기도 파주시 문산읍 돈유3로 87, 1~2층</dd>
+				</dl>
+				<dl>
+					<dt>전화</dt>
+					<dd>070-7734-3785</dd>
+				</dl>
+				<dl>
+					<dt>e-mail</dt>
+					<dd>roasting@hollyscoffee.com</dd>
+				</dl>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

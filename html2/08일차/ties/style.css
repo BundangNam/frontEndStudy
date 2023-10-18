@@ -1,0 +1,71 @@
+#group{
+	width:100%;
+	padding: 50px 0;
+	font-size: 16px;
+	line-height: 23px;
+}
+#group .inner{
+	overflow: hidden;
+}
+#group dl{
+	float: left;
+	width: 23.5%;
+	margin-right: 2%;
+}
+#group dl:last-child{
+	margin-right: 0;
+}
+#group dl dt{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+#group dl dd:first-of-type img{
+	width: 100%;
+}
+#group dl dd a{
+	color: #08f;
+}
+#group dl dd form #mail{
+	font-family: 'Antic', sans-serif;
+	font-size: 16px;
+	width: 80%;
+	height: 30px;
+	padding: 0 10px;
+	margin-top: 10px;
+}
+#group dl dd form #m_btn{
+	background-color: #08f;
+	color: #fff;
+	font-family: 'Antic', sans-serif;
+	font-size: 14px;
+	height: 30px;
+	border: none;
+	padding: 0 10px;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+@media screen and (min-width:601px) and (max-width:1099px){
+	#group dl{
+		width: 48%;
+		margin-right:4%;
+	}
+	#group dl:nth-child(2){
+		margin-right: 0;
+		margin-bottom: 4%;
+	}
+	#group dl:nth-child(1){
+		margin-bottom: 4%;
+	}
+}
+@media screen and (max-width:600px){
+	#group dl{
+		float: none;
+		width: 100%;
+		margin-right:0;
+		margin-bottom: 30px;
+	}
+	#group dl:last-child{
+		margin-bottom: 0;
+	}
+}

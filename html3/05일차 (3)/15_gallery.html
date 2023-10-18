@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - Gallery</title>
+	<link rel="stylesheet" href="css/style_gallery.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			/*$('#btn li').eq(1).click(function(){
+				$('p img').attr('src','images/banner2.jpg');
+			});
+			$('#btn li').eq(2).click(function(){
+				$('p img').attr('src','images/banner3.jpg');
+			});*/
+
+			$('#btn li a').click(function(){
+				$('p img').attr('src',$(this).attr('href'));
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>Image Gallery</h1>
+	<div id="gallery">
+		<ul id="btn">
+			<li><a href="images/banner1.jpg"><img src="images/banner1.jpg" alt="배너이미지1"></a></li>
+			<li><a href="images/banner2.jpg"><img src="images/banner2.jpg" alt="배너이미지2"></a></li>
+			<li><a href="images/banner3.jpg"><img src="images/banner3.jpg" alt="배너이미지3"></a></li>
+			<li><a href="images/banner4.jpg"><img src="images/banner4.jpg" alt="배너이미지4"></a></li>
+			<li><a href="images/banner5.jpg"><img src="images/banner5.jpg" alt="배너이미지5"></a></li>
+		</ul>
+		<p><img src="images/banner1.jpg" alt="배너이미지1"></p>
+	</div>
+</body>
+</html>

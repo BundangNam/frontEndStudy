@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - filtering</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			//$('li:first-child').css('background-color','pink');
+			$('li').first().css('background-color','pink');
+			$('li').last().css('font-size','72px');
+			$('li').eq(2).css('color','orange');
+			$('li').eq(4).css({
+				'background-color':'yellowgreen',
+				'border':"5px solid green",
+				'color':'#fff'
+			});
+
+			$('li').even().css('text-align','center'); // 짝수
+			$('li').odd().css('text-decoration','line-through'); // 홀수
+		});
+	</script>
+
+</head>
+<body>
+	<h1>jQuery 필터링</h1>
+
+	<ul>
+		<li>월요일</li>
+		<li>수요일</li>
+		<li>금요일</li>
+	</ul>
+
+	<div>
+		<ul>
+			<li>화요일</li>
+			<li>목요일</li>
+			<li>토요일</li>
+		</ul>
+	</div>
+</body>
+</html>

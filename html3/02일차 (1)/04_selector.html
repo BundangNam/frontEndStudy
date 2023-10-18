@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Traversing</title>
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('ul').prevUntil('h1').css('border','3px solid orange');
+		});
+	</script>
+</head>
+<body>
+	<h1>jQuery Traversing(= DOM tree)</h1>
+	<p>선택한 요소를 기준으로 위, 아래, 옆으로 이동하면서 선택</p>
+
+	<h2>jQuery Ancestors - 상위객체</h2>
+	<ul>
+		<li>parent() - 선택한 요소의 부모객체(상위객체) 선택</li>
+		<li>parents() - 선택한 요소의 상위객체 모두 선택</li>
+		<li>parentsUntil() - 선택한 요소와 ()요소 사이의 상위객체 선택</li>
+	</ul>
+
+	<section>
+		<h2>jQuery Descendants - 하위객체</h2>
+		<dl>
+			<dt>find() - 선택한 요소의 하위객체 중 ()객체</dt>
+			<dd>children() - 선택한 요소의 직접적인 하위객체</dd>
+		</dl>
+
+		<h2>jQuery Siblings - 형제객체</h2>
+		<ol>
+			<li>siblings() - 선택한 요소의 형제 객체</li>
+			<li>next() - 선택한 요소의 형제 객체 중 다음객체</li>
+			<li>nextAll() - 선택한 요소의 형제 객체 중 다음객체 전부</li>
+			<li>nextUntil() - 선택한 요소의 형제 객체 중 ()요소 사이의 다음객체</li>
+			<li>prev() - 선택한 요소의 형제 객체 중 이전객체</li>
+			<li>prevAll() - 선택한 요소의 형제 객체 중 이전객체 전부</li>
+			<li>prevUntil() - 선택한 요소의 형제 객체 중 ()요소 사이의 이전객체</li>
+		</ol>
+	</section>
+</body>
+</html>

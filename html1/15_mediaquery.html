@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>mediaquery 미디어쿼리</title>
+	<style type="text/css">
+		@media screen and (min-width:1200px){
+			body{
+				background-color: orange;
+			}
+		}
+		@media screen and (min-width:601px) and (max-width:1199px){
+			body{
+				background-color: yellowgreen;
+			}
+		}
+		@media screen and (max-width:600px){
+			body{
+				background-color: skyblue;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>mediaquery 미디어쿼리</h1>
+	<p>css만으로 화면의 크기나 환경에 따라 웹사이트를 변경</p>
+
+	<dl>
+		<dt>미디어쿼리 작성 방법</dt>
+		<dd>@medi screen and (사이즈조절){
+			//조건에 맞는 기기에 적용할 css
+		}
+		</dd>
+	</dl>
+
+	<h2>미디어유형(=단말기유형)</h2>
+	<p>screen : 스크린화면 - tv, 모니터, 휴대폰...</p>
+	<p>print : 인쇄 결과물 출력 및 미리보기 화면에 표시중인 문서</p>
+	<p>all : 모든 장치</p>
+	<p>speech : 음성합성장치</p>
+</body>
+</html>

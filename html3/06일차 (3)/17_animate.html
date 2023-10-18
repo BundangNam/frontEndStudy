@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - animate</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		h2, h3{
+			margin-top: 30px;
+		}
+		#box1{
+			width: 200px;
+			height: 200px;
+			background: orange;
+			margin: 50px;
+		}
+	</style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#box1').click(function(){
+				$(this).animate({
+					width:'800px',
+					fontSize:'36px'
+				}, 5000, 'linear', function(){
+					$(this).css('background-color','red');
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>animate()</h1>
+	<p>스크립트로 움직이는 동작을 적용</p>
+
+	<h2>
+		$('선택자').animate({
+			스타일
+		}, 속도, easing, 콜백함수);
+	</h2>
+
+	<h3>*스타일 - 속성:'값'</h3>
+	<ul>
+		<li>여백 : margin / padding</li>
+		<li>크기 : width / height</li>
+		<li>위치 : top / right / bottom / left</li>
+		<li>테두리 : border</li>
+		<li>투명도 : opacity</li>
+		<li>글자 : fontSize / lineHeight </li>
+	</ul>
+
+	<h3>속도 </h3>
+	<p>duration 애니메이션 효과를 완료할 때까지 걸리는 시간</p>		
+	<p>milliseconds(1초=1000)</p>
+	<p>400(기본값) / fast(200) / slow(600) </p>
+
+	<h3>easing</h3>
+	<p>timing-function</p>
+	<p>'swing' : 시작과 끝부분은 천천히 중간은 빠르게(기본값)</p>
+	<p>'linear' : 일정한 속도</p>
+
+	<h3>콜백함수</h3>
+	<p>animate() 동작이 끝난 후 실행되어질 값</p>
+
+	<p id="box1">가로길이</p>
+</body>
+</html>

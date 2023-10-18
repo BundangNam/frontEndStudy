@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>테이블</title>
+	<style>
+		*{
+			margin: 0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		@font-face {
+    font-family: 'TheJamsil5Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+		body{
+			font-family: 'TheJamsil5Bold';
+			font-size: 14px;
+		}
+		table{
+			width: 600px;
+			margin: 50px;
+			border-spacing: 0;
+			border-top:1px solid #ccc;
+			border-left:1px solid #ccc;
+		}
+		th{
+			border-bottom:1px solid #ccc;
+			border-right:1px solid #ccc;
+			padding: 5px 0;
+			background-color: #eee;
+		}
+		td{
+			border-bottom:1px solid #ccc;
+			border-right:1px solid #ccc;
+			padding: 5px 0;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<colgroup>
+			<col span="1" width="300">
+			<col span="3" width="100">
+ 		</colgroup>
+		<tr>
+			<th>구분</th>
+			<th>원서접수</th>
+			<th>필기시험</th>
+			<th>합격발표</th>
+		</tr>
+		<tr>
+			<td rowspan="2">2023년 정기기능사</td>
+			<td colspan="3">일정완료</td>
+		</tr>
+		<tr>
+			<td>2023.03.13</td>
+			<td>2023.04.08</td>
+			<td>2023.04.19</td>
+		</tr>
+	</table>
+</body>
+</html>

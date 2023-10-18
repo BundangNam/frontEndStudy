@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Effects - sideMenu</title>
+
+	<link rel="stylesheet" href="css/style_side.css">
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#side>ul>li>a').click(function(){
+				if($(this).hasClass('white')){
+					$('#side>ul>li>a').removeClass('white');
+					$('#side .sub').slideUp();
+				}else{
+					$('#side>ul>li>a').removeClass('white');
+					$(this).addClass('white');
+					$('#side .sub').slideUp();
+					$(this).siblings('.sub').slideDown();
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="side">
+		<ul>
+			<li><a href="#">BrandStory<span>브랜드스토리</span></a>
+				<ul class="sub">
+					<li><a href="#">브랜드이야기</a></li>
+					<li><a href="#">커피이야기</a></li>
+					<li><a href="#">디저트이야기</a></li>
+					<li><a href="#">브랜드필름</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Menu<span>메뉴</span></a>
+				<ul class="sub">
+					<li><a href="#">NEW</a></li>
+					<li><a href="#">커피&amp;음료</a></li>
+					<li><a href="#">디저트</a></li>
+					<li><a href="#">델리</a></li>
+					<li><a href="#">상품</a></li>
+					<li><a href="#">케이크</a></li>
+					<li><a href="#">영양분석표</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Store<span>매장정보</span></a>
+				<ul class="sub">
+					<li><a href="#">매장찾기</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

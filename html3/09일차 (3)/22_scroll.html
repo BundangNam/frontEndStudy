@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - scroll</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		body{
+			width: 5000px;
+			height: 5000px;
+		}
+		span{
+			width: 100px;
+			background-color: #000;
+			color: #fff;
+			text-align: center;
+			display: block;
+			position: absolute;
+			right:0;
+		}
+		.r1{
+			top:500px;
+		}
+		.r2{
+			top:1000px;
+		}
+		.r3{
+			top:1500px;
+		}
+		.r4{
+			top:2000px;
+		}
+		strong{
+			width: 200px;
+			display: block;
+			text-align: center;
+			background-color: navy;
+			color:#fff;
+			cursor: pointer;
+			padding: 10px 0;
+			margin-top: 10px;
+		}
+		.btn3{
+			position: fixed;
+			left:0;
+			top:500px;
+		}
+	</style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.btn1').click(function(){
+				$('html').scrollTop(1000);
+			});
+
+			$('.btn2').click(function(){
+				window.scrollTo(1000,1500);
+			});
+
+			$('.btn3').click(function(){
+				window.scrollBy(0,500);
+			});
+		});
+	</script>
+</head>
+<body>
+	<span class="r1">500</span>
+	<span class="r2">1000</span>
+	<span class="r3">1500</span>
+	<span class="r4">2000</span>
+
+	<h1>scroll()</h1>
+	<p>스크롤을 사용했을경우 적용</p>
+	<p>scrollTop() / scrollTo() / scrollBy()</p>
+
+	<h2>scrollTop()</h2>
+	<p>스크롤 막대의 위치를 설정(수직)</p>
+	<strong class="btn1">scrollTop()</strong>
+
+	<h2>scrollTo()</h2>
+	<p>지정된 좌표로 스크롤을 이동</p>
+	<strong class="btn2">scrollTo()</strong>
+
+	<h2>scrollBy()</h2>
+	<p>지정한 값 만큼 스크롤을 여러번 이동</p>
+	<strong class="btn3">scrollBy()</strong>
+</body>
+</html>

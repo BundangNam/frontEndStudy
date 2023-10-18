@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Event</title>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		div{
+			width: 200px;
+			height: 200px;
+			border:1px solid #ccc;
+			margin: 20px;
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.box1').click(function(){
+				$(this).css('background-color','red');
+			});
+			$('.box2').dblclick(function(){
+				$(this).css('background-color','orange');
+			});
+			$('.box3').mouseover(function(){
+				$(this).css('background-color','yellowgreen');
+			});
+			$('.box3').mouseout(function(){
+				$(this).css('background-color','transparent');
+			});
+			$('.box4').mouseenter(function(){
+				$(this).css('background-color','skyblue');
+			});
+			$('.box4').mouseleave(function(){
+				$(this).css('background-color','transparent');
+			});
+			$('.box5').mousedown(function(){
+				$(this).css('background-color','navy');
+			});
+			$('.box5').mouseup(function(){
+				$(this).css('background-color','transparent');
+			});
+
+			$('.box6').mouseover(function(){
+				$(this).css('background-color','purple');
+			}).mouseout(function(){
+				$(this).css('background-color','#ccc');
+			}).click(function(){
+				$(this).css('background-color','pink');
+			});
+		});
+	</script>
+
+</head>
+<body>
+	<h1>jQuery 이벤트</h1>
+	<p>무언가를 발생되게 하는 동작</p>
+
+	<h2>MouseEvent - 마우스동작</h2>
+	<ul>
+		<li>click - 마우스를 눌렀다가 떼는 동작</li>
+		<li>dblclick - 더블클릭, click동작을 2번</li>
+		<li>mouseover / mouseout - 영역에 마우스를 올리면 / 영역에서 마우스가 벗어나면</li>
+		<li>mouseenter / mouseleave - 영역에 마우스를 올리면 / 영역에서 마우스가 벗어나면</li>
+		<li>mousedown / mouseup - 영역을 누르고 있으면 / 영역을 떼면</li>
+	</ul>
+
+	<div class="box1">click</div>
+	<div class="box2">dblclick</div>
+	<div class="box3">mouseover / mouseout</div>
+	<div class="box4">mouseenter / mouseleave</div>
+  <div class="box5">mousedown / mouseup</div>
+
+  <div class="box6">마우스를 올리면 보라색 배경 / 마우스가 영역을 벗어나면 회색배경 / 클릭하면 분홍배경</div>
+</body>
+</html>

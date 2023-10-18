@@ -1,0 +1,59 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: 'NanumSquareNeo-Variable';
+	font-size: 16px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #999;
+}
+
+#side{
+	width: 200px;
+	background-color: #333;
+	padding: 20px;
+}
+#side>ul>li{
+	margin-bottom:20px;
+}
+#side>ul>li:last-child{
+	margin-bottom: 0;
+}
+#side>ul>li>a{
+	font-size: 20px;
+}
+#side>ul>li>a span{
+	display: block;
+	font-size: 18px;
+	margin-top: 5px;
+}
+#side>ul>li>a.white{
+	color: #fff;
+}
+
+#side .sub{
+	border: 1px solid #999;
+	padding: 10px;
+	margin-top: 10px;
+	display: none;
+}
+#side .sub a{
+	padding: 5px 0; 
+	display: block;
+}
+#side .sub a:hover{
+	color:#fff;
+}

@@ -1,0 +1,67 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: 'NanumSquareNeo-Variable';
+	font-size: 14px;
+}
+
+#qna{
+	width: 800px;
+	margin: 100px auto;
+}
+#qna dl{
+	background-color: #ebebeb;
+	margin-bottom:20px;
+}
+#qna dl dt{
+	padding: 20px;
+	font-size: 18px;
+	font-weight: bold;
+}
+#qna dl dt span{
+	width: 50px;
+	height: 50px;
+	background-color: purple;
+	color:#fff;
+	display: inline-block;
+	text-align: center;
+	line-height: 50px;
+	margin-right: 20px;
+	border-radius: 25px;
+}
+#qna dl dt.gray{
+	background-color: #666;
+	color:#fff;
+}
+#qna dl dd{
+	padding: 20px;
+	overflow: hidden;
+	display: none;
+}
+#qna dl dd span{
+	float:left;
+	font-size: 18px;
+	font-weight: bold;
+	width: 50px;
+	height: 50px;
+	background-color: #fb1;
+	color:#fff;
+	text-align: center;
+	line-height: 50px;
+	margin-right: 20px;
+	border-radius: 25px;
+}
+#qna dl dd b{
+	float:left;
+	font-weight: normal;
+	line-height: 23px;
+} 

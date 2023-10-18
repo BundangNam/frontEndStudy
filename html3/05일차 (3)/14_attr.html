@@ -1,0 +1,27 @@
+  <!DOCTYPE html>
+  <html lang="ko">
+  <head>
+  	<meta charset="UTF-8">
+  	<title>jQuery - attr()</title>
+  	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  	<script type="text/javascript">
+  		$(document).ready(function(){
+  			$('.aa').attr('width',300);
+  			$('.bb').removeAttr('width');
+  			$('.cc').mouseover(function(){
+  				$(this).attr('src','images/banner1.jpg');
+  			}).mouseout(function(){
+  				$(this).attr('src','images/banner3.jpg');
+  			});
+  		});
+  	</script>
+  </head>
+  <body>
+  	<h1>attr()</h1>
+  	<p>선택한 요소의 속성값을 설정</p>
+
+  	<img src="images/banner1.jpg" alt="배너이미지1" class="aa">
+  	<img src="images/banner2.jpg" alt="배너이미지2" class="bb" width="1200">
+  	<img src="images/banner3.jpg" alt="배너이미지3" class="cc">
+  </body>
+  </html>

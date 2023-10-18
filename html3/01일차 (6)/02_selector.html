@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - selector</title>
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('*').css('font-size','48px');
+			$('h1').css('background-color','orange');
+			$('#aa').css('color','red');
+			$('.bb').css('border','2px solid yellowgreen');
+			$('.cc').css('background-color','#000');
+			$('.cc').css('color','#fff');
+			$('.dd').css({
+				'background-color':'navy',
+				'color':'yellow'
+			});
+			$('#ee').addClass('abc');
+
+			$('p:first-child').css('background-color','pink');
+			$('p:nth-child(2)').css('background-color','skyblue');
+			$('dd:nth-of-type(2)').css('color','red');
+		});
+	</script>
+	<style>
+		.abc{/*초록배경/노랑글자/연두색테두리*/
+			background-color: green;
+			color:yellow;
+			border:5px solid yellowgreen;
+		}
+	</style>
+</head>
+<body>
+	<h1>jQuery 선택자</h1>
+	<ul>
+		<li>전체선택자 *</li>
+		<li>요소(태그) 선택자</li>
+		<li id="aa">아이디 선택자 #</li>
+		<li class="bb">클래스 선택자 .</li>
+		<li class="cc">검정색배경/흰색글자</li>
+		<li class="dd">남색배경/노랑글자</li>
+		<li id="ee">초록배경/노랑글자/연두색테두리</li>
+	</ul>
+
+	<h2>자손 선택자</h2>
+	<div>
+		<p>첫째</p>
+		<p>둘째</p>
+		<p>셋째</p>
+	</div>
+
+	<dl>
+		<dt>구조선택자</dt>
+		<dd>월요일</dd>
+		<dd>수요일</dd>
+		<dd>금요일</dd>
+	</dl>
+</body>
+</html>

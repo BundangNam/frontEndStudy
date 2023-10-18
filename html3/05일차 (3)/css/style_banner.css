@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+img{
+	vertical-align: middle;
+}
+
+#banner{
+	width: 782px;
+	height: 430px;
+	margin: 50px auto;
+	position: relative;
+}
+#banner #btn{
+	position: absolute;
+	left:50%;
+	margin-left: -45px;
+	bottom: 20px;
+	overflow: hidden;
+}
+#btn li{
+	float:left;
+	margin-right: 10px;
+}
+#btn li:last-child{
+	margin-right: 0;
+}
+#btn li a{
+	width: 10px;
+	height: 10px;
+	display: block;
+	background-color: #ccc;
+	border-radius: 5px;
+}
+#btn li a.on{
+	background-color: red;
+}

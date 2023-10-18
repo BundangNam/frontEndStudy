@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Effects</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 5000px;
+		}
+		h2{
+			margin-top: 50px;
+		}
+		ul{
+			overflow: hidden;
+			margin: 20px 0;
+		}
+		ul li{
+			list-style: none;
+			float:left;
+			width: 200px;
+			padding: 10px 0;
+			background-color: navy;
+			color:#fff;
+			text-align: center;
+			margin-right: 10px;
+			cursor: pointer;
+		}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.btn2').click(function(){
+				$('#pop').hide();
+			});
+			$('.btn1').click(function(){
+				$('#pop').show();
+			});
+			$('.btn3').click(function(){
+				$('#pop').toggle();
+			});
+
+			$('.btn5').click(function(){
+				$('#slide').slideUp();
+			});
+			$('.btn4').click(function(){
+				$('#slide').slideDown();
+			});
+			$('.btn6').click(function(){
+				$('#slide').slideToggle();
+			});
+
+			$('.btn8').click(function(){
+				$('#fade').fadeOut();
+			});
+			$('.btn7').click(function(){
+				$('#fade').fadeIn();
+			});
+			$('.btn9').click(function(){
+				$('#fade').fadeToggle();
+			});
+		});
+	</script>
+</head>
+<body>
+	<h1>jQuery 효과</h1>
+
+	<h2>show() - 보이다 / hide() - 숨기다 / toggle() - show()+hide()</h2>
+	<ul>
+		<li class="btn1">show()</li>
+		<li class="btn2">hide()</li>
+		<li class="btn3">toggle()</li>
+	</ul>
+	<div id="pop">
+		<img src="images/banner1.jpg" alt="배너이미지1">
+	</div>
+
+	<h2>slideDown() - 아래로 내려오면서 나타남 / slideUp() - 위로 올라가면서 사라짐 / slideToggle() - slideDown()+slideUp()</h2>
+	<ul>
+		<li class="btn4">slideDown()</li>
+		<li class="btn5">slideUp()</li>
+		<li class="btn6">slideToggle()</li>
+	</ul>
+	<div id="slide">
+		<img src="images/banner2.jpg" alt="배너이미지2">
+	</div>
+
+	<h2>fadeIn() - 점점 선명하게 사라짐 / fadeOut() - 점점 투명하게 사라짐 / fadeToggle() - fadeIn()+fadeOut()</h2>
+	<ul>
+		<li class="btn7">fadeIn()</li>
+		<li class="btn8">fadeOut()</li>
+		<li class="btn9">fadeToggle()</li>
+	</ul>
+	<div id="fade">
+		<img src="images/banner3.jpg" alt="배너이미지3">
+	</div>
+
+	<p>The End</p>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery - Gallery</title>
+	<link rel="stylesheet" href="css/style_banner.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#btn li a').first().addClass('on');
+			$('#btn li a').click(function(){
+				$('#btn li a').removeClass('on');
+				$(this).addClass('on');
+				$('p img').attr('src',$(this).attr('href'));
+				return false;
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="banner">
+		<p><img src="images/banner1.jpg" alt="배너1이미지"></p>
+		<ul id="btn">
+			<li><a href="images/banner1.jpg"></a></li>
+			<li><a href="images/banner2.jpg"></a></li>
+			<li><a href="images/banner3.jpg"></a></li>
+			<li><a href="images/banner4.jpg"></a></li>
+			<li><a href="images/banner5.jpg"></a></li>
+		</ul>
+	</div>
+</body>
+</html>

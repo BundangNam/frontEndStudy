@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>테이블</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		@font-face {
+	    font-family: 'TheJamsil3Regular';
+	    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2') format('woff2');
+	    font-weight: 400;
+	    font-style: normal;
+		}
+		body{
+			font-family: 'TheJamsil3Regular';
+			font-size: 20px;
+			color:#666;
+		}
+		table{
+			width: 700px;
+			margin: 50px auto;
+			border-spacing: 0;
+			border-top:1px solid #ccc;
+			border-left:1px solid #ccc;
+		}
+		th{
+			border-bottom:1px solid #ccc;
+			border-right:1px solid #ccc;
+			color:#333;
+			padding: 10px 0;
+			background-color: #eee;
+		}
+		td{
+			border-bottom:1px solid #ccc;
+			border-right:1px solid #ccc;
+			text-align: center;
+			padding: 10px 0;
+		}
+		caption{
+			text-align: left;
+			color:#333;
+			font-size: 24px;
+			margin-bottom: 10px;
+			font-weight: bold;
+		}
+		.c1{
+			width: 150px;
+			background-color: pink;
+		}
+	</style>
+</head>
+<body>
+	<table>
+		<caption>종목별 검정현황</caption>
+		<colgroup>
+			<col span="1" class="c1">
+			<col span="1" width="70">
+			<col span="6" width="80">
+		</colgroup>
+		<tr>
+			<th rowspan="2">종목명</th>
+			<th rowspan="2">연도</th>
+			<th colspan="3">필기</th>
+			<th colspan="3">실기</th>
+		</tr>
+		<tr>
+			<th>응시</th>
+			<th>합격</th>
+			<th>합격률(%)</th>
+			<th>응시</th>
+			<th>합격</th>
+			<th>합격률(%)</th>
+		</tr>
+		<tr>
+			<td rowspan="3">웹디자인기능사</td>
+			<td>
+				<ul>
+					<li> wewr</li>
+				</ul>
+			</td>
+			<td>6,998</td>
+			<td>5,422</td>
+			<td>77.5%</td>
+			<td>4,052</td>
+			<td>2,388</td>
+			<td>58.9%</td>
+		</tr>
+		<tr>
+			<td>2021</td>
+			<td>9,451</td>
+			<td>7,890</td>
+			<td>83.5%	</td>
+			<td>4,975</td>
+			<td>3,093</td>
+			<td>62.2%</td>
+		</tr>
+		<tr>
+			<td>2020</td>
+			<td>6,740</td>
+			<td>5,703</td>
+			<td>84.6%</td>
+			<td>3,983</td>
+			<td>2,533</td>https://weather.naver.com/video/02135580
+			<td>63.6%</td>
+		</tr>
+	</table>
+</body>
+</html>
+
+

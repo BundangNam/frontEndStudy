@@ -1,0 +1,181 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: 'NanumSquareNeo-Variable';
+	font-size: 16px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+
+.inner{
+	width: 1440px;
+	margin:0 auto;
+}
+@media screen and (max-width:1439px){
+	.inner{
+		width:90%;
+	}
+}
+
+header{
+	width: 100%;
+	box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+header .inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 65px;
+}
+header section{
+	display: flex;
+}
+header section h1{
+	margin-right:50px;
+}
+header section h1 img{
+	width: 112px;
+}
+header section ul{
+	display: flex;
+}
+header section ul li{
+	margin-right: 30px;
+}
+header section ul li a{
+	color:#000;
+	line-height:32px;
+	font-weight: bold;
+}
+header .inner>a{
+	border:2px solid #0060df;
+	color:#0060df;
+	padding:5px 20px;
+	font-size: 14px;
+	border-radius: 5px;
+	font-weight: bold;
+}
+header .inner>a:hover{
+	background-color:#0060df;
+	color:#fff;
+}
+header h2{
+	display: none;
+}
+@media screen and (max-width:900px){
+	header section ul{
+		display: none;
+	}
+	header .inner>a{
+		display: none;
+	}
+	header h2{
+		display: block;
+	}
+	header h2 .material-symbols-outlined{
+		font-size: 32px;
+	}
+}
+
+
+#banner{
+	width: 100%;
+}
+#banner .inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#banner h3{
+	font-size: 60px;
+	line-height: 75px;
+}
+#banner h3 a{
+	display: block;
+	background-color:#0060df;
+	color:#fff;
+	font-size: 16px;
+	width: 200px;
+	text-align: center;
+	line-height: 21px;
+	padding: 15px 0;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+#banner h3 a:hover{
+	background-color:#0250bb;
+}
+#banner p img{
+	width: 100%;
+}
+@media screen and (max-width:900px){
+	#banner h3{
+		text-align: center;
+		padding: 10% 0;
+		font-size: 50px;
+	}
+	#banner h3 a{
+		margin: 0 auto;
+		margin-top:20px;
+	}
+	#banner p{
+		display: none;
+	}
+}
+
+
+#slogan{
+	width: 100%;
+}
+#slogan .inner{
+	display: flex;
+	justify-content: space-between;
+	background-color: #eee;
+	padding:50px 0;
+}
+#slogan p{
+	width: 48%;
+	text-align: right;
+}
+#slogan p img{
+	width: 340px;
+}
+#slogan dl{
+	width: 48%;
+	padding-right: 20%;
+}
+#slogan dl dt{
+	font-size: 40px;
+	font-weight: bold;
+	line-height: 50px;
+	margin-bottom: 20px;
+}
+#slogan dl dd{
+	line-height: 25px;
+}
+@media screen and (max-width:900px){
+	#slogan .inner{
+		flex-direction: column;
+		align-items: center;
+	}
+	#slogan p{
+		width: 80%;
+	}
+	#slogan dl{
+		width:80%;
+		padding-right:0;
+	}
+}

@@ -1,0 +1,324 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+@font-face {
+  font-family: 'NanumSquareNeo-Variable';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+body{
+	font-family: 'NanumSquareNeo-Variable';
+	font-size: 12px;
+	color:#333;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+img{
+	vertical-align: middle;
+}
+
+#wrap{
+	width: 100%;
+}
+.inner{
+	width: 940px;
+	margin:0 auto;
+	position: relative;
+}
+
+#wrap header{
+	width: 100%;
+	height: 148px;
+	border-bottom:2px solid #ba000c;
+	padding-top:10px;
+	position: relative;
+}
+header h1{
+	text-align: center;
+	margin-bottom: 10px;
+}
+header #menu li{
+	float:left;
+	width: 156.6px;
+	text-align: center;
+	padding: 10px 0;
+}
+header #menu li:hover{
+	background-color:#ba000c;
+	color:#fff;
+}
+header #menu li a{
+	font-weight: bold;
+	font-size: 18px;
+}
+header #menu li:hover a{
+	color:#fff;
+}
+header #menu li span{
+	display: block;
+	margin-top:5px;
+	color: #666;
+	opacity: 0;
+}
+header #menu li:hover span{
+	color: #fff;
+	opacity: 1;
+}
+
+header #sub{
+	position: absolute;
+	left:0;
+	top:146px;
+	z-index: 6;
+	display: none;
+}
+header #sub ul{
+	float: left;
+	width: 156.6px;
+	text-align: center;
+}
+header #sub a{
+	color: #777;
+	display: block;
+	padding: 5px 0;
+	font-size: 14px;
+}
+header #sub a:hover{
+	color: #fff;
+}
+header #sub_bg{
+	position: absolute;
+	left:0;
+	top:146px;
+	background-color: #333;
+	width: 100%;
+	height: 250px;
+	z-index: 5;
+	display: none;
+}
+
+#banner{
+	width: 1903px;
+	height: 480px;
+	overflow: hidden;
+	position: relative;
+}
+#banner #image{
+	width: 7612px;
+	position: relative;
+	overflow: hidden;
+}
+#image li{
+	float: left;
+}
+#image img{
+	width: 1903px;
+	height: 480px;
+}
+#banner #btn{
+	overflow: hidden;
+	position: absolute;
+	bottom:20px;
+	left:50%;
+	margin-left: -35px;
+}
+#btn li{
+	width: 10px;
+	height: 10px;
+	background-color: #999;
+	margin-right: 10px;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+}
+#btn li:last-child{
+	margin-right: 0;
+}
+#btn li.on{
+	background-color:#ba000c;
+}
+
+#fade_banner{
+	width: 1903px;
+	height: 480px;
+	overflow: hidden;
+	position: relative;
+}
+#fade_banner #fade_image{
+	position: relative;
+}
+#fade_image li{
+	position: absolute;
+	left:0;
+	top:0;
+	display: none;
+}
+#fade_banner #fade_btn{
+	overflow: hidden;
+	position: absolute;
+	bottom:20px;
+	left:50%;
+	margin-left: -35px;
+}
+#fade_btn li{
+	width: 10px;
+	height: 10px;
+	background-color: #999;
+	margin-right: 10px;
+	border-radius: 5px;
+	float: left;
+	cursor: pointer;
+}
+#fade_btn li:last-child{
+	margin-right: 0;
+}
+#fade_btn li.red{
+	background-color:#ba000c;
+}
+
+#tab{
+	width: 100%;
+	padding: 50px 0;
+}
+#tab #tab_btn{
+	overflow: hidden;
+	width: 450px;
+	margin:0 auto;
+}
+#tab #tab_btn li{
+	float: left;
+	width: 150px;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 3px solid #eee;
+	padding: 10px 0;
+	cursor: pointer;
+}
+#tab #tab_btn li.line{
+	border-bottom: 3px solid #ba000c;
+}
+#tab #tab_contents{
+	width: 100%;
+	margin-top: 30px;
+}
+#tab_contents>div{
+	display: none;
+}
+#tab_contents #tab1{
+	overflow: hidden;
+}
+#tab1 section{
+	float: left;
+}
+#tab1 .wide{
+	width: 475px;
+	padding: 0 20px;
+}
+#tab1 h2{
+	background-color: #faf9f7;
+	padding-top: 30px;
+	padding-left: 15px;
+	font-size: 20px;
+}
+#tab1 h2 .material-symbols-outlined{
+	font-size: 20px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+#tab1 .wide h2{
+	background-color: transparent;
+	color:#ba000c;
+	margin-bottom: 10px;
+}
+#tab1 .wide p{
+	padding-left: 15px;
+}
+#tab1 .wide ul{
+	overflow: hidden;
+	margin-top: 30px;
+}
+#tab1 .wide li{
+	width: 145px;
+	float: left;
+	text-align: center;
+	border-right: 1px dotted #ccc;
+	padding: 0 20px;
+}
+#tab1 .wide li:last-child{
+	border-right:none;
+}
+#tab1 .wide li img{
+	width: 100px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#tab2{
+	width: 100%;
+	overflow: hidden;
+}
+#tab2 .member{
+	float: left;
+}
+#tab2 .card{
+	float: right;
+}
+
+#tab3{
+	overflow: hidden;
+	width: 100%;
+}
+#tab3 dl{
+	float: left;
+	width: 205px;
+	margin-right: 40px;
+}
+#tab3 dl dt{
+	font-weight: bold;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+#tab3 dl dd{
+	line-height: 20px;
+	overflow: hidden;
+}
+#tab3 dl dd span{ 
+	width: 150px;
+	display: block;
+	white-space: nowrap; /*영역내에 글자가 길 때 자동으로 줄바꿈 되는것을 막아줌*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	float: left;
+}
+#tab3 dl dd b{
+	float: right;
+	font-weight: normal;
+}
+#tab3 ul{
+	float: right;
+	overflow: hidden;
+}
+#tab3 ul li{
+	float: left;
+	text-align: center;
+	padding: 10px;
+}
+#tab3 ul li:first-child{
+	border-right: 1px dotted #ccc;
+}
+#tab3 ul li img{
+	display: block;
+	width: 33px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}

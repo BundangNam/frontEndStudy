@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Effects - QnA</title>
+
+	<link rel="stylesheet" href="css/style_qna.css">
+
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#qna dt').click(function(){
+				//다른 dt를 클릭해 닫기
+				$('#qna dd').slideUp();
+				$(this).next().slideDown();
+				$('#qna dt').removeClass('gray');
+				$(this).addClass('gray');
+			});
+		});
+	</script>
+</head>
+<body>
+	<div id="qna">
+		<dl>
+			<dt><span>Q</span>[스탬프] 스탬프를 다른 사람에게 선물할 수 있나요?</dt>
+			<dd>
+				<span>A</span>
+				<b>네. 퍼플멤버스 앱에서 <스탬프> → <스탬프 선물하기> 에서 가능합니다.<br>퍼플멤버스 회원끼리 1회에 스탬프 1판씩 (스탬프 적립수 10개) 선물 보내기/ 받기가 가능합니다.<br>단, 한 번 선물한 스탬프는 다시 되돌릴 수 없기때문에 신중하게 사용해야 합니다.</b>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><span>Q</span>[스탬프] 스탬프 적립내역은 어떻게 확인할 수 있나요?</dt>
+			<dd>
+				<span>A</span>
+				<b>퍼플멤버스 앱을 사용하신다면, <스탬프> → <스탬프 내역> 에서 확인 가능합니다.<br>다만 선불카드 서비스를 이용하지 않는다면(바코드 미보유)<br>스탬프 번호 16자리를 등록해야 확인하실 수 있습니다.<br>퍼플멤버스 앱을 미사용 하신다면, 매장 또는 고객센터를 통해서<br>스탬프 바코드 번호로 확인하실 수 있습니다.</b>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><span>Q</span>[스탬프] 스탬프 적립시 퐁도 적립 되나요?</dt>
+			<dd>
+				<span>A</span>
+				<b>네, 가능합니다. 퍼플멤버스 앱에 등록된 카드로 결제시 제조 음료 1잔 구매시마다,<br>1개의 퐁과 1개의 스탬프가 적립됩니다.  (현금, 신용카드등 기타 결제 수단 중복적립불가)<br>단, 퍼플멤버스 앱을 사용하지 않으신다면 스탬프 적립만 받을 수 있습니다.</b>
+			</dd>
+		</dl>
+	</div>
+</body>
+</html>

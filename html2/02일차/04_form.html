@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form</title>
+	<style>
+		*{
+			margin:0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		@font-face {
+	     font-family: 'S-CoreDream-3Light';
+	     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+	     font-weight: normal;
+	     font-style: normal;
+		}
+		body{
+			font-family: 'S-CoreDream-3Light';
+			font-size: 16px;
+		}
+		h2{
+			margin-top: 30px;
+		}
+		p{
+			margin-bottom: 10px;
+		}
+		input{
+			font-family: 'S-CoreDream-3Light';
+			font-size: 16px;
+		}
+
+		#username{
+			width: 300px;
+			height: 50px;
+			padding: 0 10px;
+			border:2px solid green;
+			border-radius: 5px;
+		}
+		#pw{
+			width: 300px;
+			height: 50px;
+			padding: 0 10px;
+			border:none;
+			border-bottom:2px solid #000;
+			outline: none;
+		}
+		#mail{
+			outline-color: orange;
+		}
+	</style>
+</head>
+<body>
+	<h1>입력양식의 속성</h1>
+
+	<form autocomplete="off">
+		<h2>유효성검사 required="required"</h2>
+		<p>입력필드에 값이 채워졌는지에 대한 부분을 판단해 주는 속성</p>
+		<p>
+			<label for="username">이름</label>
+			<input type="text" id="username" required>
+		</p>
+
+		<h2>힌트 placeholder="힌트의 내용"</h2>
+		<p>입력필드에 입력형식의 힌트를 주거나 미리 예시해 주는 속성</p>
+		<p>
+			<input type="password" title="비밀번호" placeholder="비밀번호" id="pw">
+		</p>
+
+		<h2>자동완성기능 autocomplete="on/off"</h2>
+		<p>입력필드에 작성했던 내용을 기억했다가 다시 사용할 수 있게 해주는 속성(기본값은 이미 적용:on, 브라우저의 설정값에 따라 다를 수 있음)</p>
+		<p>
+			<label for="mail"></label>
+			<input type="email" id="mail" autocomplete="off">
+		</p>
+
+		<h2>입력필드 활성화 autofocus</h2>
+		<p>
+			<input type="search" title="검색" placeholder="검색해주세요~"  autofocus>
+		</p>
+
+		<input type="submit" value="확인">
+	</form>
+</body>
+</html>

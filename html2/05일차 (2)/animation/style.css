@@ -1,0 +1,184 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+li{
+	list-style: none;
+}
+body{
+	background-image: url(wood_pattern.jpg);
+}
+
+#wrap{
+	background-image: url(background.png);
+	width: 720px;
+	height: 300px;
+	margin: 50px auto;
+	box-shadow:2px 2px 5px rgba(0,0,0,0.5);
+	position: relative;
+	overflow: hidden;
+}
+
+#wave{
+	position: relative;
+	height: 300px;
+	z-index: 5;
+}
+#wave .back{
+	background-image: url(water-back.png);
+	width: 1000px;
+	height: 84px;
+	position: absolute;
+	bottom:10px;
+	left:-140px;
+	animation:wb 1.5s infinite alternate;
+}
+@keyframes wb{
+	0%{left:-140px; bottom:10px}
+	100%{left:-136px; bottom:14px;}
+}
+#wave .front{
+	background-image: url(water-front.png);
+	width: 1000px;
+	height: 158px;
+	position: absolute;
+	bottom:-75px;
+	left:-140px;
+	animation:wf 3s infinite;
+}
+@keyframes wf{
+	0%{bottom:-75px; left:-140px;}
+	50%{bottom:-71px; left:-144px;}
+	100%{bottom:-75px; left:-140px;}
+}
+
+#clouds{
+	position: absolute;
+	left:0;
+	top:0;
+}
+#clouds ul{
+	width: 720px;
+}
+#clouds .c1{
+	position: absolute;
+	left:0;
+	top:0;
+	animation:cl1 10s linear infinite;
+}
+@keyframes cl1{
+	0%{left:0;}
+	100%{left:-720px;}
+}
+#clouds .c2{
+	position: absolute;
+	left:720px;
+	top:0;
+	animation:cl2 10s linear infinite;
+}
+@keyframes cl2{
+	0%{left:720px;}
+	100%{left:0;}
+}
+#clouds li:first-child{
+	position: absolute;
+	left:40px;
+	top:10px;
+}
+#clouds li:nth-child(2){
+	position: absolute;
+	left:300px;
+	top:-20px;
+}
+#clouds li:last-child{
+	position: absolute;
+	left:550px;
+	top:-5px;
+}
+
+#boat{
+	position: absolute;
+	left:20px;
+	top:50px;
+	animation:b1 3s infinite;
+}
+@keyframes b1{
+	0%{left:20px; top:50px;}
+	50%{left:16px; top:46px;}
+	100%{left:20px; top:50px;}
+}
+#boat dt{
+	position: relative;
+	top:0;
+	left: 0;
+	animation:b2 3s;
+}
+@keyframes b2{
+	0%{left:-250px;}
+	100%{left: 0;}
+}
+#boat dd{
+	position: absolute;
+	top:-30px;
+	right:30px;
+	animation:b3 5s;
+}
+@keyframes b3{
+	0%{opacity: 0;}
+	70%{opacity: 0;}
+	100%{opacity: 1;}
+}
+
+#txt{
+	position: absolute;
+	top:30px;
+	right: 30px;
+	z-index: 10;
+}
+#txt h1{
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 48px;
+	color:royalblue;
+	animation: t1 7s;
+}
+@keyframes t1{
+	0%{opacity: 0;}
+	80%{opacity: 0;}
+	100%{opacity: 1;}
+}
+#txt h2{
+	font-family: 'Boogaloo', cursive;
+	font-size: 30px;
+	margin: 20px 0;
+	opacity: 0;
+	animation: t2 2s 7s forwards;
+	/*animation-fill-mode:none(기본값) / forwards - 마지막 프레임 유지 / backwards - 처음 적용된 스타일 유지 / both;*/
+}
+@keyframes t2{
+	0%{opacity: 0;}
+	100%{opacity: 1;}
+}
+#txt form{
+	position: relative;
+	left:400px;
+	top:0;
+	animation:box 3s 9s forwards;
+}
+@keyframes box{
+	0%{left:400px;}
+	100%{left:0;}
+}
+#txt #mail{
+	width: 200px;
+	height: 50px;
+	border:1px solid #ccc;
+	padding: 0 10px;
+}
+#txt #btn{
+	width: 100px;
+	height: 50px;
+	border:1px solid #ccc;
+	color:royalblue;
+	font-family: 'Boogaloo', cursive;
+}

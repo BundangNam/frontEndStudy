@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		body{
+			height: 3000px;
+		}
+		p{
+			width: 200px;
+			height: 200px;
+			margin: 20px;
+		}
+		.t1{
+			background-color: orange;
+			transform: translateX(200px);
+		}
+		.t2{
+			background-color: yellowgreen;
+			transform: translateY(-100px);
+		}
+		.t3{
+			background-color: skyblue;
+			transform: translate(200px,-200px);
+		}
+
+		.s1{
+			background-color: orange;
+			transform: scaleX(2);
+		}
+		.s2{
+			background-color: yellowgreen;
+			transform:scaleY(0.5);
+		}
+		.s3{
+			background-color: skyblue;
+			transform: scale(0.5,0.8);
+		}
+
+		.r1{
+			background-color: yellowgreen;
+			transform: rotate(45deg);
+		}
+		.r2{
+			background-color: skyblue;
+			transform: rotate(-90deg);
+		}
+
+		.k1{
+			background-color: orange;
+			transform: skewX(45deg);
+		}
+		.k2{
+			background-color: yellowgreen;
+			transform: skewY(45deg);
+		}
+		.k3{
+			background-color: skyblue;
+			transform: skew(15deg,15deg);
+		}
+	</style>
+</head>
+<body>
+	<h1>transform - 2차원변형</h1>
+	<ul>
+		<li>이동</li>
+		<li>크기</li>
+		<li>회전</li>
+		<li>기울기</li>
+	</ul>
+
+	<h2>이동 - translate</h2>
+	<p class="t1">좌우이동 translateX() - 좌-/우+</p>
+	<p class="t2">상하이동 translateY() - 상-/하+</p>
+	<p class="t3">상하좌우 translate(x,y)</p>
+
+	<h2>크기 - scale : 비율사용(0%(0)~100%(1))</h2>
+	<p class="s1">좌우크기 scaleX()</p>
+	<p class="s2">상하크기 scaleY()</p>
+	<p class="s3">상하좌우 크기 scale(X,Y)</p>
+
+	<h2>회전 - rotate</h2>
+	<p class="r1">시계방향 +</p>
+	<p class="r2">반시계방향 -</p>
+
+	<h2>기울기 - skew</h2>
+	<p class="k1">X기준 skewX()</p>
+	<p class="k2">Y기준 skewY()</p>
+	<p class="k3">XY기준 skew(X,Y)</p>
+</body>
+</html>

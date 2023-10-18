@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>viewport</title>
+</head>
+<body>
+	<h1>meta name="viewport" content="width=device-width, initial-scale=1.0"</h1>
+	<p>viewport는  화면상의 표시영역, 뷰포트의 너비와 초기배율(zoom레벨)을 설정하기 위해 사용</p>
+
+	<dl>
+		<dt>width 뷰포트의 너비(가로길이)</dt>
+		<dd>device-width : 화면의 너비를 기기의 가로사이즈로 설정</dd>
+		<dd>숫자 : 화면의 너비를 지정된 px값으로 설정 ex)320 640</dd>
+	</dl>
+
+	<dl>
+		<dt>initial-scale 초기배율(zoom레벨)</dt>
+		<dd>1.0 : 초기화면의 배율을 1.0(100%)으로 설정</dd>
+		<dd>숫자 : 화면의 배율을 직접 설정 ex)2, 3..</dd>
+	</dl>
+
+	<p>minimum-scale=1 : 뷰포트의 최소배율 (기본값 0.25 / 범위 0~10.0)</p>
+	<p>maximum-scale=1 : 뷰포트의 최대배율 (기본값 5.0 / 범위 0~10.0)</p>
+	<p>user-scalable=no : 사용자가 화면을 축소/확대 할 수 있는지의 여부(yes:크기조절 가능/no:크기조절이 불가능)</p>
+</body>
+</html>
